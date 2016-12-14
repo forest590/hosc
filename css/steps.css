@@ -1,0 +1,256 @@
+body{
+	background-color: #394B5F;
+}
+
+.header__top{
+  padding-top: 30px;
+  min-height: 108px;
+  background-color: #394B5F;
+  border-bottom: 3px solid #FFCD4D;
+}
+
+::-webkit-scrollbar{
+  background: #394B5F;
+  width: 8px;
+} 
+
+::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3); 
+} 
+
+::-webkit-scrollbar-thumb{
+  -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.9); 
+}
+
+.steps h1{
+	color: #FFFFFF;	
+	margin: 50px 0 50px 0;
+	text-align: center;
+	font-weight: normal;
+}
+
+.steps h2{
+	color: #394B5F;
+	font-weight: normal;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.steps__timeline{
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.steps__timeline::before{
+  content: "";
+  position: absolute;
+  left: 18px;
+  height: 75%;
+  width: 4px;
+  background: #FFFFFF;
+}
+
+.steps__timeline-row{
+  position: relative;
+  margin: 2em 0;
+}
+
+.steps__timeline-row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.steps__timeline-img{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #FFCD4D;
+}
+
+.steps__timeline-img img{
+  display: block;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -32px;
+  margin-top: -32px;
+}
+
+.steps__timeline-content{
+  position: relative;
+  margin-left: 60px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  padding: 1em;
+  box-shadow: 0 3px 0 #FFCD4D;
+}
+
+.steps__timeline-content:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.steps__timeline-content h2{
+  color: #394B5F;
+}
+
+.steps__timeline-content p{
+  font-size: 0.8125rem;
+  color: #394B5F;
+  line-height: 1.6;
+}
+
+.steps__timeline-content::before{
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 100%;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-right: 7px solid white;
+}
+
+.info{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.info h2{
+  text-align: center;
+  margin: 100px 0 10px 0;
+  color: #FFFFFF;
+  font-weight: normal;
+}
+
+.info p{
+  text-indent: 20px;
+  text-align: justify;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.info__principles{
+  margin-bottom: 50px;
+}
+
+.info__principles ul h3{
+  margin: 50px 0 10px 0;
+  color: #FFFFFF;
+  font-weight: normal;
+  text-align: center;
+}
+
+.info__principles ul li{
+  list-style: none;
+  border-left: 5px solid #FFCD4D;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 0 10px 10px;
+}
+
+.info__principles ul li:nth-child(even){
+  background: #FFFFFF;
+}
+
+.info__principles ul li:nth-child(odd){
+  background: #DCDCDC;
+}
+
+.article{
+  margin-bottom: 50px;
+}
+
+.article__info{
+  border: 5px solid #FFCD4D;
+  margin: 30px auto 50px auto;
+  width: 357px;
+  color: #FFFFFF;
+  font-size: 18px;
+  box-shadow: 5px 5px 5px #000000;
+}
+
+.article__info ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 50px 0px 27px 40px;
+}
+
+.article__info ul li{
+}
+
+.article__info a{
+  color: #8F9296;
+  text-align: right;
+  display: block;
+  margin-right: 10px;
+  padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px){
+  .steps__timeline-content h2{
+    font-size: 25px;
+  }
+  .steps__timeline-content p{
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1170px){
+  .steps__timeline-content{
+    margin-left: -10px;
+    padding: 27px;
+    width: 45%;
+  }
+
+  .steps__timeline-content::before{
+    top: 44px;
+    left: 100%;
+    border-color: transparent;
+    border-left-color: #FFFFFF;
+  }
+
+  .steps__timeline-row:nth-child(even) .steps__timeline-content{
+    float: right;
+    margin-right: -10px;
+  }
+
+  .steps__timeline-row:nth-child(even) .steps__timeline-content::before{
+    left: auto;
+    right: 100%;
+    border-color: transparent;
+    border-right-color: #FFFFFF;
+  }
+
+  .steps__timeline-img{
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    margin-left: -50px;
+  }
+
+  .steps__timeline::before{
+    left: 50%;
+    margin-left: -2px;
+  }
+  
+  .steps__timeline-row:first-child{
+    margin-top: 0;
+  }
+
+  .steps__timeline-row{
+    margin-top: 65px;
+  }
+}
+
+@media only screen and (max-width: 468px){
+  .steps__timeline-img img{
+  }
+}
